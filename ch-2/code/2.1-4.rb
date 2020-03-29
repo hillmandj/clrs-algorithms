@@ -2,17 +2,26 @@
 
 # Note a and b must be of the same length
 def add_binary(a, b)
-  raise(ArgumentError, 'A and B are not equal length') if a.length != b.length
+  if a.length != b.length
+    raise(ArgumentError, 'A and B are not equal length')
+  end
+
   c = []
   carry = 0
+
   (a.length - 1).downto(0) do |i|
-    c[i + 1] = (a[i].to_i + b[i].to_i + carry) % 2
-    if a[i].to_i + b[i].to_i + carry >= 2
+    int_a = a[i].to_i
+    int_b = b[i].to_i
+
+    c[i + 1] = (int_a + int_b + carry) % 2
+
+    if int_a + int_b + carry >= 2
       carry = 1
     else
       carry = 0
     end
   end
+
   c[0] = carry
   c
 end
