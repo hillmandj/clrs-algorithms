@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# Code for 1.2-3
+
 def exponential_less_than_squared?(n)
   squared = 100 * n ** 2
   exponential = 2 ** n

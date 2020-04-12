@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# Code for 2.2-2
+
 def selection_sort(a)
   0.upto(a.length - 1) do |j|
     min = j

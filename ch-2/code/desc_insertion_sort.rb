@@ -1,5 +1,7 @@
 #! /usr/bin/env ruby
 
+# Code for 2.1-2
+
 # Example: [2, 10, 3]
 #
 # Iteration 1:

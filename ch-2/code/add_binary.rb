@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# Code for 2.1-4
+
 # Note a and b must be of the same length
 def add_binary(a, b)
   if a.length != b.length

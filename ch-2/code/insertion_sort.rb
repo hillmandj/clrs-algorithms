@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# Code for 2.1-1
+
 def insertion_sort(a)
   # From character at index 1 to the last index
   1.upto(a.length - 1) do |j|
