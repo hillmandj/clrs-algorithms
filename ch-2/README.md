@@ -4,10 +4,15 @@ This chapter focuses on Sorting Algorithms including Insertion Sort, Selection S
 
 It introduces formal concepts regarding the analysis of algorithms, including terms like loop invariant, best case / worst case analysis, and divide and conquer.
 
-**Contents:**
+**Exercises:**
 - [Section 2.1](#)
 - [Section 2.2](#)
 - [Section 2.3](#)
+
+**Algorithms**
 - [Insertion Sort](#)
 - [Selection Sort](#)
 - [Merge Sort](#)
+- [Binary Search](#)
+- [Add Two Binary Numbers](#)
+
