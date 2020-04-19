@@ -6,10 +6,12 @@ def selection_sort(a)
   0.upto(a.length - 1) do |j|
     min = j
     i = j + 1
+
     while i < a.length
       if a[i] < a[min]
         min = i
       end
+
       i = i + 1
     end
 

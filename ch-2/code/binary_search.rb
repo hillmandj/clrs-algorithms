@@ -6,6 +6,9 @@
 # If you do not, and just slice at the midpoint, you'll never keep the
 # original index of the array, since the midpoint is calculated each time.
 def binary_search(a, l, r, v)
+  # Return if the array is already empty
+  return if a.length == 0
+
   # Return if l is greater than or equal to r, since this would mean
   # we'd have searched through the entire array
   return if l >= r
@@ -30,6 +33,6 @@ end
 if __FILE__ == $0
   # Binary search assumes the array sorted
   a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  r = binary_search(a, 0, a.length, 7)
+  r = binary_search(a, 0, a.length, 11)
   puts "r is #{r}"
 end
