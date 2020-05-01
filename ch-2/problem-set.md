@@ -73,3 +73,39 @@ This would be a linear run, we are iterating through n values and are performing
 
 b) *Write pseudocode to implement the naive polynomial-evaluation algorithm that computes each term of the polynomial from scratch. What is the running time of this algorithm? How does it compare to Horner's rule?*
 
+```
+HORNER(x, A{a0, a1, ... , a(n)}, result=0)
+  return 0 if A.length == 0
+  result += A[-1] + (x * result)
+  return result += HORNER(x, A[0..-1], result)
+```
+
+This recursive algorithm would be linear, as we still have to go through the whole list (i.e. it would have a recursive depth of n). It would have the same runtime as the code fragment for Horner's rule.
+
+c) *Abbreviation: Prove that the mathematical formula / summation for loop invariant presented by book holds*
+
+Skipping this.
+
+d) *Conclude by arguing that the given code fragment correctly evaluates a polynomial characterized by the coefficients a0, a1, ... , a(n)*
+
+The code fragment correctly terminates such that we've summed up all of the values while applying the proper coefficients to each term.
+
+**2-4 Inversions**
+
+Let A[1..n] be an array of n distinct numbers. if i < j and A[i] > A[j], then the pair (i, j) is called an inversion of A.
+
+a) *List the five inversions of the array {2, 3, 8, 6, 1}*
+
+The five inversions are: (2, 1), (3, 1), (8, 6), (8, 1), (6, 1)
+
+b) *What array with elements from the set {1, 2, ..., n} has the most inversions? How many does it have?*
+
+The array with the most inversions would be one that is sorted in descending order: `{n , n - 1, ..., 2, 1}`. It would have `(n * (n - 1)) / 2` inversions.
+
+c) *What is the relationship between the running time of insertion sort and the number of inversions in the input array?*
+
+The run time is directly related to the number of inversions, as that is essentially what determines our best case, average case, and worst case scenarios. This has to be at least partially true, since in both problems the worst case is that of a list sorted in descending order. In insertion sort, we have to loop through many more values of that is the case, since we need to insert the key at the proper index.
+
+d) *Give an algorithm that determines the number of inversions in any permutation of n elements in O(n * log(n)) worst case time. (Hint: Modify merge sort.)*
+
+Please see [inversions](#)
