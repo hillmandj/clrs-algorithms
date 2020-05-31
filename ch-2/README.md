@@ -1,4 +1,4 @@
-## Getting Started
+## Chapter 2: Getting Started
 
 This chapter focuses on Sorting Algorithms including Insertion Sort, Selection Sort, and Merge Sort. It formally introduces the concept of Big O (thetha) notation, and breaks down in great detail how that applies to those algorithms.
 
