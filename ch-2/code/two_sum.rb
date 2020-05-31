@@ -2,7 +2,7 @@
 
 # Code for 2.3-7
 
-# Not the correct answer, since it runs in linear time
+# NOTE: This is not the complete answer, as we'd have to combine this with merge sort to get what we want.
 
 def two_sum(a, x)
   h = {}

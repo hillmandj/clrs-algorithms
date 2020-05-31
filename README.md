@@ -10,6 +10,6 @@ Sometimes I'll implement things I find interesting that may or may not be in the
 
 **Contents:**
 
-- [Chapter 1](#)
-- [Chapter 2](#)
-- [Chapter 3](#)
+- [Chapter 1](https://github.com/hillmandj/clrs-algorithms/tree/master/ch-1)
+- [Chapter 2](https://github.com/hillmandj/clrs-algorithms/tree/master/ch-2)
+- [Chapter 3](https://github.com/hillmandj/clrs-algorithms/tree/master/ch-3)
