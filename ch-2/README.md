@@ -1,6 +1,6 @@
 ## Chapter 2: Getting Started
 
-This chapter focuses on Sorting Algorithms including Insertion Sort, Selection Sort, and Merge Sort. It formally introduces the concept of Big O (thetha) notation, and breaks down in great detail how that applies to those algorithms.
+This chapter focuses on Sorting Algorithms including Insertion Sort, Selection Sort, and Merge Sort. It formally introduces the concept of Big O and &theta; notation, and breaks down in great detail how that applies to those algorithms.
 
 It introduces formal concepts regarding the analysis of algorithms, including terms like loop invariant, best case / worst case analysis, and divide and conquer.
 
@@ -8,6 +8,9 @@ It introduces formal concepts regarding the analysis of algorithms, including te
 - [Section 2.1](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/2.1.md)
 - [Section 2.2](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/2.2.md)
 - [Section 2.3](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/2.3.md)
+
+**Problem Set:**
+- [Problem Set](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/problem-set.md)
 
 **Algorithms**
 - [Insertion Sort](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/code/insertion_sort.rb)

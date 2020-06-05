@@ -33,6 +33,6 @@ end
 if __FILE__ == $0
   # Binary search assumes the array sorted
   a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  r = binary_search(a, 0, a.length, 11)
+  r = binary_search(a, 0, a.length, 7)
   puts "r is #{r}"
 end

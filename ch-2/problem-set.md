@@ -6,7 +6,7 @@
 
 > a) Show that insertion sort can sort the n/k sublists, each of length k, in O(nk) worst-case time
 
-If Insertion Sort runs in the worst-case runtime of O(k^2) for each sublist, if you have to sort n values of k sublists it becomes: O(n/k * k^2), which is equal to O(nk).
+If Insertion Sort runs in the worst-case runtime of O(k<sup>2</sup>) for each sublist, if you have to sort n values of k sublists it becomes: O(n/k * k<sup>2</sup>), which is equal to O(nk).
 
 > b) Show how to merge the sublists in O(n * log(n/k)) worst-case time.
 
@@ -31,26 +31,26 @@ for i = 1 to A.length - 1
       exchange A[j] with A[j - 1]
 ```
 
-See implementation [here](#)
+See implementation [here](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/code/bubblesort.rb)
 
-> a) Let `A'` denote the output of Bubbsort(A). To prove that Bubblesort is correct, we need to prove that it terminates and that `A'[1] <= A'[2] <= ... <= A'[n]` where n = A.length. In order to show that Bubblesort actually sorts, what else do we need to prove?
+> a) Let `A'` denote the output of Bubbsort(A). To prove that Bubblesort is correct, we need to prove that it terminates and that `A'[1] <= A'[2] <= ... <= A'[n]` where `n = A.length`. In order to show that Bubblesort actually sorts, what else do we need to prove?
 
-That A' has the same elements as A.
+That `A'` has the same elements as `A`.
 
 > b) State precisely the loop invariate for the for loop in lines 2-4, and prove that this loop invariant holds. Your proof should use the structure of the loop invariant proof presented in this chapter.
 
-At each iteration of the loop, the position of the smallest element of A[i..n] is at most j.
+At each iteration of the loop, the position of the smallest element of `A[i..n]` is at most j.
 
-Initialization: This holds true prior to the first iteration because the position of any element is at most A.length
-Maintenance: This holds as we iterate, since we swap each element should A[j] <= A[j - 1].
-Termination: When we terminate, the smallest element of A[i..n] is in position i.
+Initialization: This holds true prior to the first iteration because the position of any element is at most `A.length`
+Maintenance: This holds as we iterate, since we swap each element should `A[j] <= A[j - 1]`.
+Termination: When we terminate, the smallest element of `A[i..n]` is in position `i`.
 
 > c) Using the termination condition of the loop invariant proved in part (b), state a loop invariant for the the for loop in lines 1-4 that will allow you to prove inequality (2.3). Your proof should use the structure of the loop invariant proof presented in this chapter.
 
-At the start of each iteration the subarray `A[1..i-1]` contains the i - 1 smallest elements of A in sorted order.
+At the start of each iteration the subarray `A[1..i-1]` contains the `i - 1` smallest elements of `A` in sorted order.
 
 Initialization: This holds true prior to the first iteration of the loop because we can assume that an array of 0 is already sorted
-Maintenance: This holds as we iterate, since though it takes a lot of swapping to get there, we will always place the smallest element at the correct index of A[1..i-1]
+Maintenance: This holds as we iterate, since though it takes a lot of swapping to get there, we will always place the smallest element at the correct index of `A[1..i-1]`
 Termination: When we terminate, the inequality condition holds and the array is in sorted order.
 
 > d) What is the worst case running time of Bubblesort? How does it compare to the running time of insertion sort?
@@ -108,4 +108,4 @@ The run time is directly related to the number of inversions, as that is essenti
 
 > d) Give an algorithm that determines the number of inversions in any permutation of n elements in `O(n * log(n))` worst case time. (Hint: Modify merge sort.)
 
-Please see [inversions](#)
+Please see [inversions](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/code/count_inversions.rb)
