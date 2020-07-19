@@ -5,3 +5,6 @@ This chapter delves into the specific mathematical theorems and proofs regarding
 **Exercises:**
 - [Section 3.1](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-3/3.1.md)
 - [Section 3.2](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-3/3.2.md)
+
+**Problem Set:**
+- [Problem Set](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-3/problem-set.md)
