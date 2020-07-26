@@ -37,3 +37,73 @@ Since n<sup>d</sup> < n<sup>k</sup>: 0 <= p(n) <= c<sub>1</sub>n<sup>d</sup> < c
 Similar to the last problem, now we need to prove that 0 <= c<sub>1</sub>g(n) < p(n).
 
 Since n<sup>k</sup> < n<sup>d</sup>: 0 <= c<sub>1</sub>n<sup>k</sup> < c<sub>1</sub>n<sup>d</sup> <= p(n)
+
+**3-2 Relative Asymptotic Growth**
+
+> Indicate, for each pair of expressions (A, B) in the table below, whether A is &Omicron;, &omicron;, &Omega;, &omega;, or &Theta; of B. Assume that k >= 1, &epsilon; > 0, and c > 1 are constants. Your answer should be in the form of the table with "yes" or "no" written in each box.
+
+<table>
+  <tr>
+    <th>A</th>
+    <th>B</th>
+    <th>&Omicron;</th>
+    <th>&omicron;</th>
+    <th>&Omega;</th>
+    <th>&omega;</th>
+    <th>&Theta;</th>
+  </tr>
+  <tr>
+    <td>lg<sup>k</sup>n</td>
+    <td>n<sup>&epsilon;</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>n<sup>k</sup></td>
+    <td>c<sup>n</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline;">&nbsp;n&nbsp;</span></span></td>
+    <td>n<sup>sin(n)</sup></td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>2<sup>n</sup</td>
+    <td>2<sup>n/2</sup></td>
+    <td>No</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>n<sup>lg(c)</sup></td>
+    <td>c<sup>lg(n)</sup></td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+  <tr>
+    <td>log(n!)</td>
+    <td>log(n<sup>n</sup>)</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>No</td>
+    <td>Yes</td>
+  </tr>
+</table>

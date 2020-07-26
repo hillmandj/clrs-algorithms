@@ -4,7 +4,7 @@ This chapter delves into the specific mathematical theorems and proofs regarding
 
 This chapter also goes over a series of mathematical concepts including rules of Logarithms, Exponents, Floors & Ceilings, and Fibonacci Numbers. Since it covers a lot of topics relatively quickly I found this chapter to be particularly challenging.
 
-I got particularly interested in the Golden Ratio and how that could be applied to Fibonacci Numbers. I also became interested in how the Golden Ratio is derived (which was not presented in the chapter). Please see [Golden Ratio Proof](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-3/golden-ratio-proof.md) for that.
+I got particularly interested in the Golden Ratio and how that could be applied to Fibonacci Numbers. I also became interested in how the Golden Ratio is derived (which was not presented in the chapter). Please see [Golden Ratio Derivation](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-3/golden-ratio-derivation.md) for that.
 
 **Exercises:**
 - [Section 3.1](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-3/3.1.md)
