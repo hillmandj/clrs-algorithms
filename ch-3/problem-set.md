@@ -114,4 +114,27 @@ Since n<sup>k</sup> < n<sup>d</sup>: 0 <= c<sub>1</sub>n<sup>k</sup> < c<sub>1</
 
 > lg(lg<sup> * </sup>n), 2<sup>lg<sup> * </sup>n</sup>, (<span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2</span></span>)<sup>lg(n)</sup>, n<sup>2</sup>, n!, (lg(n))!, (2/3)<sup>n</sup>, n<sup>3</sup>, lg<sup>2</sup>n, lg(n!), 2<sup>2<sup>n</sup></sup>, n<sup>1 / lg(n)</sup>, ln(ln(n)), lg<sup> * </sup>n, n * 2</sup>n</sup>, n<sup>lg(lg(n))</sup>, ln(n), 1, 2<sup>lg(n)</sup>, lg(n)<sup>log(n)</sup>, e<sup>n</sup>, 4<sup>lg(n)</sup>, (n + 1)!, <span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">lg(n)</span></span>, lg * (lg(n)), 2<sup><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2 * log(n)</span></span></sup>, n, 2<sup>2</sup>, n * lg(n), 2<sup>2<sup>n + 1</sup></sup>
 
+1. 2<sup>2<sup>n + 1</sup></sup>
+2. 2<sup>2<sup>n</sup></sup>
+3. (n + 1)!
+4. n!
+5. e<sup>n</sup>
+6. n * 2<sup>n</sup>
+7. 2<sup>n</sup>
+8. (3/2)<sup>n</sup>
+9. (lg(n))!
+10. lg(n)<sup>lg(n)</sup>
+11. n<sup>lg(lg(n))</sup>
+12. n<sup>3</sup>
+13. n<sup>2</sup>
+14. 4<sup>log(n)</sup>
+15. n * log(n)
+
+
+Classes:
+
+n<sup>lg(lg(n))</sup> = &Theta;(lg(n)<sup>lg(n)</sup)
+
 > b. Give an example of a single nonnegative function f(n) such that for all functions g<sub>i</sub>(n) in part(a), f(n) is neither &Omicron;(g<sub>i</sub>(n)) nor &Omega;(g<sub>i</sub>(n))
+
+Same here.
