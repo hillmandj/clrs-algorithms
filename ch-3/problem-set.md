@@ -18,7 +18,7 @@ We can see that if the exponent `k` is greater than or equal to `d` and c<sub>1<
 
 This would be the opposite of the previous question. Here we need to prove that 0 <= c<sub>1</sub> * n<sup>k</sup> <= p(n).
 
-If `k` is less than or equal to `d` then the polynomial will grow at a faster rate than the function c<sub>1<sub>n<sup>k</sup> at some level of n (where n > n<sub>0</sub>).
+If `k` is less than or equal to `d` then the polynomial will grow at a faster rate than the function c<sub>1</sub>n<sup>k</sup> at some level of n (where n > n<sub>0</sub>).
 
 > c. If k = d, then p(n) = &Theta;(n<sup>k</sup>)
 
@@ -71,7 +71,7 @@ Since n<sup>k</sup> < n<sup>d</sup>: 0 <= c<sub>1</sub>n<sup>k</sup> < c<sub>1</
     <td>No</td>
   </tr>
   <tr>
-    <td><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline;">&nbsp;n&nbsp;</span></span></td>
+    <td><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline;">n</span></span></td>
     <td>n<sup>sin(n)</sup></td>
     <td>No</td>
     <td>No</td>
@@ -107,3 +107,11 @@ Since n<sup>k</sup> < n<sup>d</sup>: 0 <= c<sub>1</sub>n<sup>k</sup> < c<sub>1</
     <td>Yes</td>
   </tr>
 </table>
+
+**3-3 Ordering By Asymptotic Growth Rates**
+
+> a. Rank the following functions by order of growth; that is, find an arrangement g<sub>1</sub>, g<sub>2</sub>...g<sub>30</sub> of the functions satisfying g<sub>1</sub> = &Omega;(g<sub>2</sub>), g<sub>2</sub> = &Omega;(g<sub>3</sub>)...g<sub>29</sub> = &Omega;(g<sub>30</sub>). Partition your list into equivalence classes such that the functions f(n) and g(n) are in the same class if and only if f(n) = &Theta;(g(n))
+
+> lg(lg<sup> * </sup>n), 2<sup>lg<sup> * </sup>n</sup>, (<span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2</span></span>)<sup>lg(n)</sup>, n<sup>2</sup>, n!, (lg(n))!, (2/3)<sup>n</sup>, n<sup>3</sup>, lg<sup>2</sup>n, lg(n!), 2<sup>2<sup>n</sup></sup>, n<sup>1 / lg(n)</sup>, ln(ln(n)), lg<sup> * </sup>n, n * 2</sup>n</sup>, n<sup>lg(lg(n))</sup>, ln(n), 1, 2<sup>lg(n)</sup>, lg(n)<sup>log(n)</sup>, e<sup>n</sup>, 4<sup>lg(n)</sup>, (n + 1)!, <span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">lg(n)</span></span>, lg * (lg(n)), 2<sup><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2 * log(n)</span></span></sup>, n, 2<sup>2</sup>, n * lg(n), 2<sup>2<sup>n + 1</sup></sup>
+
+> b. Give an example of a single nonnegative function f(n) such that for all functions g<sub>i</sub>(n) in part(a), f(n) is neither &Omicron;(g<sub>i</sub>(n)) nor &Omega;(g<sub>i</sub>(n))
