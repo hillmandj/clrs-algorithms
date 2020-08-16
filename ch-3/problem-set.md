@@ -112,7 +112,7 @@ Since n<sup>k</sup> < n<sup>d</sup>: 0 <= c<sub>1</sub>n<sup>k</sup> < c<sub>1</
 
 > a. Rank the following functions by order of growth; that is, find an arrangement g<sub>1</sub>, g<sub>2</sub>...g<sub>30</sub> of the functions satisfying g<sub>1</sub> = &Omega;(g<sub>2</sub>), g<sub>2</sub> = &Omega;(g<sub>3</sub>)...g<sub>29</sub> = &Omega;(g<sub>30</sub>). Partition your list into equivalence classes such that the functions f(n) and g(n) are in the same class if and only if f(n) = &Theta;(g(n))
 
-> lg(lg<sup> * </sup>n), 2<sup>lg<sup> * </sup>n</sup>, (<span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2</span></span>)<sup>lg(n)</sup>, n<sup>2</sup>, n!, (lg(n))!, (2/3)<sup>n</sup>, n<sup>3</sup>, lg<sup>2</sup>n, lg(n!), 2<sup>2<sup>n</sup></sup>, n<sup>1 / lg(n)</sup>, ln(ln(n)), lg<sup> * </sup>n, n * 2</sup>n</sup>, n<sup>lg(lg(n))</sup>, ln(n), 1, 2<sup>lg(n)</sup>, lg(n)<sup>log(n)</sup>, e<sup>n</sup>, 4<sup>lg(n)</sup>, (n + 1)!, <span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">lg(n)</span></span>, lg * (lg(n)), 2<sup><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2 * log(n)</span></span></sup>, n, 2<sup>2</sup>, n * lg(n), 2<sup>2<sup>n + 1</sup></sup>
+> lg(lg<sup> * </sup>n), 2<sup>lg<sup> * </sup>n</sup>, (<span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2</span></span>)<sup>lg(n)</sup>, n<sup>2</sup>, n!, (lg(n))!, (2/3)<sup>n</sup>, n<sup>3</sup>, lg<sup>2</sup>n, lg(n!), 2<sup>2<sup>n</sup></sup>, n<sup>1 / lg(n)</sup>, ln(ln(n)), lg<sup> * </sup>n, n * 2</sup>n</sup>, n<sup>lg(lg(n))</sup>, ln(n), 1, 2<sup>lg(n)</sup>, lg(n)<sup>log(n)</sup>, e<sup>n</sup>, 4<sup>lg(n)</sup>, (n + 1)!, <span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">lg(n)</span></span>, lg * (lg(n)), 2<sup><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">(2 * log(n))</span></span></sup>, n, 2<sup>2</sup>, n * lg(n), 2<sup>2<sup>n + 1</sup></sup>
 
 1. 2<sup>2<sup>n + 1</sup></sup>
 2. 2<sup>2<sup>n</sup></sup>
@@ -128,13 +128,33 @@ Since n<sup>k</sup> < n<sup>d</sup>: 0 <= c<sub>1</sub>n<sup>k</sup> < c<sub>1</
 12. n<sup>3</sup>
 13. n<sup>2</sup>
 14. 4<sup>log(n)</sup>
-15. n * log(n)
-
+15. log(n!)
+16. n * log(n)
+17. 2<sup>log(n)</sup>
+18. n
+19. (<span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">2</span></span>)<sup>lg(n)</sup>
+20. 2<sup><span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">(2 * log(n))</span></span></sup>
+21. lg<sup>2</sup>n
+22. ln(n)
+23. <span style="white-space: nowrap;">&radic;<span style="text-decoration:overline !important;">(lg(n))</span></span>
+24. ln(ln(n))
+25. 2<sup>log<sup> * </sup>n</sup>
+26. lg<sup> * </sup>(lg(n))
+27. lg<sup> * </sup>n
+28. lg(lg<sup> * </sup>n)
+29. n<sup>1 / lg(n)</sup>
+30. 1
 
 Classes:
 
-n<sup>lg(lg(n))</sup> = &Theta;(lg(n)<sup>lg(n)</sup)
+n<sup>lg(lg(n))</sup> = &Theta;(lg(n)<sup>lg(n)</sup>)
+n * log(n) = &Theta;(log(n!))
+n = &Theta;(2<sup>log(n)</sup>)
+lg<sup> * </sup>n = &Theta;(lg<sup> * </sup>(lg(n)))
+1 = n<sup>1 / lg(n)</sup>
 
 > b. Give an example of a single nonnegative function f(n) such that for all functions g<sub>i</sub>(n) in part(a), f(n) is neither &Omicron;(g<sub>i</sub>(n)) nor &Omega;(g<sub>i</sub>(n))
 
-Same here.
+<a href="https://www.codecogs.com/eqnedit.php?latex=f(n)&space;\left\{\begin{matrix}&space;2^{3n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;0\\&space;\frac{1}{n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;1&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(n)&space;\left\{\begin{matrix}&space;2^{3n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;0\\&space;\frac{1}{n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;1&space;\end{matrix}\right." title="f(n) \left\{\begin{matrix} 2^{3n} & n & \mod 2 = 0\\ \frac{1}{n} & n & \mod 2 = 1 \end{matrix}\right." /></a>
+
+In this case n would be evaluated differently based on whether or not it was odd or even. Therefore, it can't be &Omega;(2<sup>2</sup>n + 1</sup></sup>) cause on an odd value it would be much less than that. Similarly, it can't be &Omicron;(1) since on an even value it would be much larger.

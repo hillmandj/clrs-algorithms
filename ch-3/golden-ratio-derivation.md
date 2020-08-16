@@ -1,4 +1,4 @@
-Here is an explanation / proof of the ratio when combined with what we know about the Fibonacci sequence:
+Here is an explanation of how the Golden Ratio applies to the Fibonacci sequence:
 
 In the Fibonacci Sequence, the last two numbers sum up to the next number: x<sub>n</sub> = x<sub>n - 1</sub> + x<sub>n - 2</sub>. What happens if we look at the ratio of those numbers:
 
@@ -22,7 +22,7 @@ This can become:
 
 Using the Quadratic Equation with a = 1, b = -1, and c = -1:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{b&space;\pm&space;\sqrt{b^2&space;-&space;4ac}}{2a}&space;\rightarrow&space;\frac{1&space;\pm&space;\sqrt{-1^2&space;-&space;4(1&space;*&space;-1)}}{2(1)}&space;=&space;\frac{1&space;\pm&space;\sqrt{5}}{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{b&space;\pm&space;\sqrt{b^2&space;-&space;4ac}}{2a}&space;\rightarrow&space;\frac{1&space;\pm&space;\sqrt{-1^2&space;-&space;4(1&space;*&space;-1)}}{2(1)}&space;=&space;\frac{1&space;\pm&space;\sqrt{5}}{2}" title="\frac{b \pm \sqrt{b^2 - 4ac}}{2a} \rightarrow \frac{1 \pm \sqrt{-1^2 - 4(1 * -1)}}{2(1)} = \frac{1 \pm \sqrt{5}}{2}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{-b&space;\pm&space;\sqrt{b^2&space;-&space;4ac}}{2a}&space;\rightarrow&space;\frac{1&space;\pm&space;\sqrt{-1^2&space;-&space;4(1&space;*&space;-1)}}{2(1)}&space;=&space;\frac{1&space;\pm&space;\sqrt{5}}{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{-b&space;\pm&space;\sqrt{b^2&space;-&space;4ac}}{2a}&space;\rightarrow&space;\frac{1&space;\pm&space;\sqrt{-1^2&space;-&space;4(1&space;*&space;-1)}}{2(1)}&space;=&space;\frac{1&space;\pm&space;\sqrt{5}}{2}" title="\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \rightarrow \frac{1 \pm \sqrt{-1^2 - 4(1 * -1)}}{2(1)} = \frac{1 \pm \sqrt{5}}{2}" /></a>
 
 The final value is equal to the Golden Ratio and its conjugate:
 
