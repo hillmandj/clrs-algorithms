@@ -162,3 +162,43 @@ lg<sup> * </sup>n = &Theta;(lg<sup> * </sup>(lg(n)))
 <a href="https://www.codecogs.com/eqnedit.php?latex=f(n)&space;\left\{\begin{matrix}&space;2^{3n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;0\\&space;\frac{1}{n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;1&space;\end{matrix}\right." target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(n)&space;\left\{\begin{matrix}&space;2^{3n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;0\\&space;\frac{1}{n}&space;&&space;n&space;&&space;\mod&space;2&space;=&space;1&space;\end{matrix}\right." title="f(n) \left\{\begin{matrix} 2^{3n} & n & \mod 2 = 0\\ \frac{1}{n} & n & \mod 2 = 1 \end{matrix}\right." /></a>
 
 In this case n would be evaluated differently based on whether or not it was odd or even. Therefore, it can't be &Omega;(2<sup>2</sup>n + 1</sup></sup>) cause on an odd value it would be much less than that. Similarly, it can't be &Omicron;(1) since on an even value it would be much larger.
+
+**3-4 Asymptotic Notation Properties**
+
+> Let f(n) and g(n) be asymptotically positive functions. Prove or disprove the following conjuctures.
+
+> a. f(n) = &Omicron;(g(n)) implies g(n) = &Omicron;(f(n)).
+
+This is false. For example: n = &Omicron;(n<sup>2</sup>), but n<sup>2</sup> != &Omicron;(n)
+
+> b. f(n) + g(n) = &Theta;(min(f(n), g(n)))
+
+This is also false. If f(n) = x<sup>2</sup> and g(n) = x<sup>3</sup>, then x<sup>2</sup> + x<sup>3</sup> != &Omicron;(x<sup>2</sup>). Therefore it is not &Theta;(min(f(n), g(n)).
+
+> c. f(n) = &Omicron;(g(n)) implies that lg(f(n)) = &Omicron;(lg(g(n))), where lg(g(n)) >= 1 and f(n) >= 1 for all sufficiently large n.
+
+This is true. Since f(n) is already &Omicron;(g(n)) applying the log function to each side of the equality would maintain the relationship between the functions.
+
+> d. f(n) = &Omicron;(g(n)) implies 2<sup>f(n)</sup> = &Omicron;(2<sup>g(n)</sup>)
+
+This is false. 2n = &Omicron;(n), however 2<sup>2n</sup> = 4<sup>n</sup> != &Omicron;(2<sup>2n</sup>)
+
+> e. f(n) = &Omicron;((f(n))<sup>2</sup>)
+
+This is false. If we have f(n) = 1 / n, then f(n)<sup>2</sup> would become smaller and smaller as n increases.
+
+> f. f(n) = &Omicron;(g(n)) implies g(n) = &Omega;(f(n))
+
+This is true. This describes the transpose symmetry when comparing asymptotic non negative functions presented to us earlier in the chapter.
+
+If 0 <= f(n) <= c<sub>1</sub>g(n), then we can say 0 <= g(n) <= (1 / c<sub>1</sub>) * f(n)
+
+> g. f(n) = &Theta;(f(n / 2))
+
+This is false. This is because it wouldn't hold for all f(n). f(n) = 2<sup>2n</sup> != &Theta;(2<sup>n</sup>)
+
+> h. f(n) + &omicron;(f(n)) = &Theta;(f(n))
+
+This is true. We can replace &omicron;(f(n)) with a function g(n) so long as it falls in the range of 0 <= g(n) < c<sub>1</sub>f(n). We can then select constants c<sub>1</sub> and c<sub>2</sub> such that:
+
+0 <= c<sub>1</sub>f(n) <= f(n) + g(n) <= c<sub>2</sub>f(n)
