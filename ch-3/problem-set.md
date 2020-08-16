@@ -148,9 +148,13 @@ Since n<sup>k</sup> < n<sup>d</sup>: 0 <= c<sub>1</sub>n<sup>k</sup> < c<sub>1</
 Classes:
 
 n<sup>lg(lg(n))</sup> = &Theta;(lg(n)<sup>lg(n)</sup>)
+
 n * log(n) = &Theta;(log(n!))
+
 n = &Theta;(2<sup>log(n)</sup>)
+
 lg<sup> * </sup>n = &Theta;(lg<sup> * </sup>(lg(n)))
+
 1 = n<sup>1 / lg(n)</sup>
 
 > b. Give an example of a single nonnegative function f(n) such that for all functions g<sub>i</sub>(n) in part(a), f(n) is neither &Omicron;(g<sub>i</sub>(n)) nor &Omega;(g<sub>i</sub>(n))
