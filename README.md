@@ -13,3 +13,4 @@ Sometimes I'll implement things I find interesting that may or may not be in the
 - [Chapter 1](https://github.com/hillmandj/clrs-algorithms/tree/master/ch-1)
 - [Chapter 2](https://github.com/hillmandj/clrs-algorithms/tree/master/ch-2)
 - [Chapter 3](https://github.com/hillmandj/clrs-algorithms/tree/master/ch-3)
+- [Chapter 4](https://github.com/hillmandj/clrs-algorithms/tree/master/ch-4)
