@@ -53,7 +53,7 @@ end
 
 if __FILE__ == $0
   a = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
-  puts "This is #{a * ', '}"
+  puts "This is a: #{a * ', '}"
   result = maximum_subarray(a, 0, a.length - 1)
   puts "This is result: #{result}"
 end

@@ -2,19 +2,19 @@
 
 **2-1 Insertion Sort on Small Arrays in Merge Sort**
 
-> Although merge sort runs in `O(n * log(n))` worst-case time and insertion sort runs in O(n<sup>2</sup>) worst-case time, the constant factors in insertion sort can make it faster in practice for small problem sizes on many machines. Thus, it makes sense to coarsen the leaves of the recursion by using insertion sort within merge sort when subproblems become sufficiently small. Consider a modification to merge sort in which n/k sublists of length k are sorted using insertion sort and then merged using the standard merging mechanism, where k is a value to be determined.
+> Although merge sort runs in &Omicron;(n * log(n)) worst-case time and insertion sort runs in &Omicron;(n<sup>2</sup>) worst-case time, the constant factors in insertion sort can make it faster in practice for small problem sizes on many machines. Thus, it makes sense to coarsen the leaves of the recursion by using insertion sort within merge sort when subproblems become sufficiently small. Consider a modification to merge sort in which n/k sublists of length k are sorted using insertion sort and then merged using the standard merging mechanism, where k is a value to be determined.
 
-> a) Show that insertion sort can sort the n/k sublists, each of length k, in O(nk) worst-case time
+> a) Show that insertion sort can sort the n/k sublists, each of length k, in &Omicron;(nk) worst-case time
 
-If Insertion Sort runs in the worst-case runtime of O(k<sup>2</sup>) for each sublist, if you have to sort n values of k sublists it becomes: O(n/k * k<sup>2</sup>), which is equal to O(nk).
+If Insertion Sort runs in the worst-case runtime of &Omicron;(k<sup>2</sup>) for each sublist, if you have to sort n values of k sublists it becomes: &Omicron;(n/k * k<sup>2</sup>), which is equal to &Omicron;(nk).
 
-> b) Show how to merge the sublists in O(n * log(n/k)) worst-case time.
+> b) Show how to merge the sublists in &Omicron;(n * log(n/k)) worst-case time.
 
 In practice, this would involve "trimming down" the length of the recurrence tree, such that once each sublist reaches the length of k, there is no further recursion needed and insertion sort is employed. This would mean that rather than having log(n) levels of recursion, we have log(n) - log(k) levels of recursion. Using logarithmic mathematical rules, when you substract two logarithms that is equal to dividing them, so our final result is log(n/k).
 
-> c) Given that the modified algorithm runs in O(nk + n * log(n/k)) worst case time, what is the largest value of k as a function of n for which the modified algorithm has the same running time as standard merge sort, in terms of O-notation?
+> c) Given that the modified algorithm runs in &Omicron;(nk + n * log(n/k)) worst case time, what is the largest value of k as a function of n for which the modified algorithm has the same running time as standard merge sort, in terms of &Omicron;-notation?
 
-If k is equal to 1, it would produce the exact same runtime as the original merge sort, as that would yield O(n + n * log(n)), in which we drop the lower-order / constant term such that it becomes O(n * log(n)). That said, should we want k to be greater than 1, we could express k as a function of n and as long as f(k) is similar to the log(n) then it would have the same asymptotics.
+If k is equal to 1, it would produce the exact same runtime as the original merge sort, as that would yield &Omicron;(n + n * log(n)), in which we drop the lower-order / constant term such that it becomes &Omicron;(n * log(n)). That said, should we want k to be greater than 1, we could express k as a function of n and as long as f(k) is similar to the log(n) then it would have the same asymptotics.
 
 > d) How should we choose k in practice?
 
@@ -55,7 +55,7 @@ Termination: When we terminate, the inequality condition holds and the array is 
 
 > d) What is the worst case running time of Bubblesort? How does it compare to the running time of insertion sort?
 
-The worst case run time of Bubblesort would take place if the list was sorted in descending order, in which case we would have to swap n times for each iteration. This represents an O(n<sup>2</sup>) runtime. This is the same as the worst case runtime for Insertion sort. However, the best case runtime for bubblesort will always be O(n<sup>2</sup>) whereas the best case runtime for insertion sort is O(n).
+The worst case run time of Bubblesort would take place if the list was sorted in descending order, in which case we would have to swap n times for each iteration. This represents an &Omicron;(n<sup>2</sup>) runtime. This is the same as the worst case runtime for Insertion sort. However, the best case runtime for bubblesort will always be &Omicron;(n<sup>2</sup>) whereas the best case runtime for insertion sort is &Omicron;(n).
 
 **2-3 Correctness of Horner's Rule**
 
@@ -67,7 +67,7 @@ for i = n downto 0
   y = a(i) + x * y
 ```
 
-> a) In terms of O-notation, what is the running time of this code fragment for Horner's rule?
+> a) In terms of &Omicron;-notation, what is the running time of this code fragment for Horner's rule?
 
 This would be a linear run, we are iterating through n values and are performing constant mathematical operations.
 
@@ -106,6 +106,6 @@ The array with the most inversions would be one that is sorted in descending ord
 
 The run time is directly related to the number of inversions, as that is essentially what determines our best case, average case, and worst case scenarios. This has to be at least partially true, since in both problems the worst case is that of a list sorted in descending order. In insertion sort, we have to loop through many more values of that is the case, since we need to insert the key at the proper index.
 
-> d) Give an algorithm that determines the number of inversions in any permutation of n elements in `O(n * log(n))` worst case time. (Hint: Modify merge sort.)
+> d) Give an algorithm that determines the number of inversions in any permutation of n elements in &Omicron;(n * log(n)) worst case time. (Hint: Modify merge sort.)
 
 Please see [inversions](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-2/code/count_inversions.rb)

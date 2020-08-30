@@ -10,7 +10,7 @@ The chapter applies what was learned in Chapter 3: Growth of Functions by always
 
 **Exercises:**
 
-Work in progress.
+- [Section 4.1](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-4/4.1.md)
 
 **Problem Set:**
 

@@ -1,6 +1,6 @@
 ## Chapter 2: Getting Started
 
-This chapter focuses on Sorting Algorithms including Insertion Sort, Selection Sort, and Merge Sort. It formally introduces the concept of Big O and &theta; notation, and breaks down in great detail how that applies to those algorithms.
+This chapter focuses on Sorting Algorithms including Insertion Sort, Selection Sort, and Merge Sort. It formally introduces the concept of &Omicron; and &Theta; notation, and breaks down in great detail how that applies to those algorithms.
 
 It introduces formal concepts regarding the analysis of algorithms, including terms like loop invariant, best case / worst case analysis, and divide and conquer.
 
