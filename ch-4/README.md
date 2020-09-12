@@ -21,3 +21,4 @@ Work in progress.
 - [Brute Force Maximum Subarray](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-4/code/brute_force_maximum_subarray.rb)
 - [Recursive Maximum Subarray](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-4/code/maximum_subarray.rb)
 - [Combined Maximum Subarray](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-4/code/combined_maximum_subarray.rb)
+- [Linear Runtime Maximum Subarray](https://github.com/hillmandj/clrs-algorithms/blob/master/ch-4/code/linear_runtime_maximum_subarray.rb)
