@@ -13,7 +13,7 @@ def linear_maximum_subarray(a)
   i = 0
   current_sum = 0
 
-  (0).upto(a.length - 1).each do |j|
+  0.upto(a.length - 1).each do |j|
     # As we go left to right, add to current_sum
     current_sum += a[j]
 
@@ -37,7 +37,42 @@ def linear_maximum_subarray(a)
     end
   end
 
-  return { low: low, high: high, value: max_sum }
+  { low: low, high: high, value: max_sum }
+end
+
+def sentinal_linear_maximum_subarray(a)
+  low = 0
+  high = 0
+
+  # These are sentinals for the minimum integer value in ruby
+  # This algorithm is better than what's up top since it will
+  # return the highest value if every item in the array is
+  # negative.
+  #
+  # This is calculated by taking the total number of bytes that
+  # make up an integer (1.size == 8) times the number of bits in
+  # a byte (8), removing 1 since one is used for the sign (totals 63).
+  # We then bit shift any integer (in this case 1) that many times.
+  max_sum = -(1 << (1.size * 8 - 1))
+  current_sum = -(1 << (1.size * 8 - 1))
+  i = 0
+
+  0.upto(a.length - 1).each do |j|
+    if current_sum > 0
+      current_sum += a[j]
+    else
+      current_sum = a[j]
+      i = j
+    end
+
+    if current_sum > max_sum
+      low = i
+      high = j
+      max_sum = current_sum
+    end
+  end
+
+  { low: low, high: high, value: max_sum }
 end
 
 if __FILE__ == $0
@@ -45,5 +80,13 @@ if __FILE__ == $0
   puts "This is a: #{a * ', '}"
   result = linear_maximum_subarray(a)
   puts "This is result: #{result}"
+  sentinal_result = sentinal_linear_maximum_subarray(a)
+  puts "This is sentinal result: #{sentinal_result}"
+  a = [-1, -2, -3]
+  puts "This is another a: #{a * ', '}"
+  result = linear_maximum_subarray(a)
+  sentinal_result = sentinal_linear_maximum_subarray(a)
+  puts "This is result (only shows that profit is 0): #{result}"
+  puts "This is sentinal result (actual subarray): #{sentinal_result}"
 end
 
