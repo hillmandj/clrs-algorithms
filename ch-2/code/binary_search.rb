@@ -9,9 +9,9 @@ def binary_search(a, l, r, v)
   # Return if the array is already empty
   return if a.length == 0
 
-  # Return if l is greater than or equal to r, since this would mean
+  # Return if r is not greater than or equal to l, since this would mean
   # we'd have searched through the entire array
-  return if l >= r
+  return unless r >= l
 
   # Calculate midpoint
   m = (l + r) / 2
